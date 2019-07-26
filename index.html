@@ -30,13 +30,13 @@
                 </div>
 
                 <div class="col-6 mt-3">
-                    <input type="text" id="hash" class="form-control" maxlength="8">
+                    <input type="text" id="hash" class="form-control"   >
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-8 mt-3 offset-2 text-center">
-                    <button class="btn btn-primary btn-block">Entrar no Jogo</button>
+                    <button class="btn btn-primary btn-block" onClick="validateHash()">Entrar no Jogo</button>
                 </div>
             </div>
         </section>
@@ -45,7 +45,7 @@
 
             <div class="row">
                 <div class="col-12 mt-5">
-                    <label id="questionNumber">Pergunta 1</label>
+                    <label id="questionNumber"></label>
                 </div>
             </div>
 
@@ -53,7 +53,7 @@
             <div class="row">
                 <div class="col-12 mt-2">
                     <label class="font-weight-light" id="questionDescription">
-                        Uma descrição muito louca
+                        
                     </label>
                 </div>
             </div>
@@ -61,8 +61,8 @@
             <div class="row">
                 <div class="col-12 mt-2">
                     <label class="font-weight-light">
-                        <input type="radio" id="questionOption1"></input>
-                        <label for="questionOption1">Option 1</label>
+                        <input type="radio" id="questionOption1" name="options">
+                        <label for="questionOption1" id="labelQuestionOption1"></label>
                     </label>
                 </div>
             </div>
@@ -70,7 +70,8 @@
             <div class="row">
                 <div class="col-12 mt-2">
                     <label class="font-weight-light">
-                        <input type="radio" id="questionOption2">Opção 2</input>
+                        <input type="radio" id="questionOption2" name="options">
+                        <label for="questionOption2" id="labelQuestionOption2"></label>
                     </label>
                 </div>
             </div>
@@ -78,25 +79,41 @@
             <div class="row">
                 <div class="col-12 mt-2">
                     <label class="font-weight-light">
-                        <input type="radio" id="questionOption3">Opção 3</input>
+                        <input type="radio" id="questionOption3" name="options">
+                        <label for="questionOption3" id="labelQuestionOption3"></label>
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 mt-2">
+                    <label class="font-weight-light">
+                        <input type="radio" id="questionOption4" name="options">
+                        <label for="questionOption4" id="labelQuestionOption4"></label>
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 mt-2">
+                    <label class="font-weight-light">
+                        <input type="radio" id="questionOption5" name="options">
+                        <label for="questionOption5" id="labelQuestionOption5"></label>
                     </label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-12 mt-2 text-right">
-                    <label class="font-weight-light">
-                        <button class="btn btn-primary">Próximo</button>
-                    </label>
-                </div>
-            </div>
 
-          
+                    <div id="buttons">
+
+                    </div>
+                </div>
+            </div>         
 
 
         </section>
-
-
         
     </div>
   

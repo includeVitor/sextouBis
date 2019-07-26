@@ -5,9 +5,11 @@ require("dotenv-safe").load();
 const app = express();
 
 app.use(parser.json())
+
 app.use(cors());
 
 require('./routes/perguntas.js')(app)
+
 app.listen(3000, function(){
     console.log('Sextou com Bis =D' );
 })
