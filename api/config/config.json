@@ -1,0 +1,23 @@
+{
+  "development": {
+    "user": "wizard",
+    "password": "wizard",
+    "database": "financialWizard",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "user": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "user": "yoosta74_sexta",
+    "password": "sextoubis",
+    "database": "yoosta74_sextoubis",
+    "host": "br954.hostgator.com.br",
+    "dialect": "mysql"
+  }
+}
