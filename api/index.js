@@ -7,8 +7,7 @@ const app = express();
 app.use(parser.json())
 app.use(cors());
 
-require('./routes.js')(app)
-
+require('./routes/perguntas.js')(app)
 app.listen(3000, function(){
     console.log('Sextou com Bis =D' );
 })

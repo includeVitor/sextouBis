@@ -3,7 +3,7 @@ const express = require('express');
 const router  = express.Router();
 
 router.get('/checktoken/:token', (request, response) => {
-
+    response.json({message: 'chegou aqui'})
 });
 
 router.post('/answer', (request, response) => {
